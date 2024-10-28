@@ -1,0 +1,19 @@
+<div class="row">
+@for (item of employees; track $index) {
+<div class="col-3">
+<div class="card" style="width: 18rem;">
+    <img src="{{item.photoPath}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">Name:{{item.name}}</p>
+      <p class="card-text">Namegender:{{item.gender}}</p>
+      <p class="card-text">email:{{item.email}}</p>
+      <p class="card-text">phoneNumber:{{item.phoneNumber}}</p>
+      <p class="card-text">Date:{{item.dateOfBirth|date}}</p>
+      <p class="card-text">Department:{{item.department}}</p>
+      <p class="card-text">IsActive:{{item.isActive}}</p>
+    </div>
+  </div>
+</div>
+  
+}
+</div>
